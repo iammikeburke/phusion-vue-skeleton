@@ -28,7 +28,6 @@ function webpack()
 {
   const webpackConfig = require(projectRoot + '/webpack.config.js');
   webpackConfig.watch = false;
-  console.log('webpackConfig.watch', webpackConfig.watch);
 
   return runWebpack(webpackConfig);
 }
@@ -40,7 +39,6 @@ function webpackWatch()
 {
   const webpackConfig = require(projectRoot + '/webpack.config.js');
   webpackConfig.watch = true;
-  console.log('webpackConfig.watch', webpackConfig.watch);
 
   return runWebpack(webpackConfig);
 }
