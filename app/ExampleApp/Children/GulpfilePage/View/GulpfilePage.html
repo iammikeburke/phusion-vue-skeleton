@@ -1,0 +1,54 @@
+<!-- Code -->
+<div class="code">
+	<!-- Empty line -->
+	<div class="code__line"></div>
+	<!-- // You're all set... -->
+	<div class="code__line">
+		<span class="code__comment">// Complete Gulpfile </span>
+	</div>
+	<div class="code__line">
+		<span class="code__comment">// Tasks to handle scss, js, webpack builds</span>
+	</div>
+	<div class="code__line">
+		<span class="code__comment">//  and Phusion config merging.</span>
+	</div>
+
+	<!-- Empty line -->
+	<div class="code__line"></div>
+	<!-- while (!succeed) { -->
+	<div class="code__line">
+		<span class="code__keyword">function</span> <span class="code__function">scss</span><span class="code__parens">(</span><span class="code__parens">)</span>
+	</div>
+	<div class="code__line">
+		<span class="code__brace">{</span>
+	</div>
+	<div class="code__line">
+		<span class="code__space">&nbsp;</span>
+		<span class="code__keyword">return</span> <span class="code__function">src</span><span class="parens">(</span><span class="code__string">"assets/scss/**/*.scss"</span><span class="parens">)</span><span class="code__semi-colon">;</span>
+	</div>
+	<div class="code__line">
+		<span class="code__space">&nbsp;</span>
+		&nbsp;&nbsp;.<span class="code__function">pipe</span><span class="parens">(</span><span class="code__function">sass</span><span class="parens">(</span><span class="parens">)</span><span class="parens">)</span>
+	</div>
+	<!--.pipe(dest(scssDestDirPath));-->
+	<div class="code__line">
+		<span class="code__space">&nbsp;</span>
+		&nbsp;&nbsp;.<span class="code__function">pipe</span><span class="parens">(</span><span class="code__function">dest</span><span class="parens">(</span><span class="code__string">"public/assets/"</span><span class="parens">)</span><span class="parens">)</span><span class="code__semi-colon">;</span>
+	</div>
+	<!-- } -->
+	<div class="code__line">
+		<span class="code__brace">}</span>
+	</div>
+	<!-- Empty lines -->
+	<div class="code__line"></div>
+
+	<div class="code__line"></div>
+	<div class="code__line"></div>
+
+	<div class="code__line"></div>
+	<div class="code__line"></div>
+	<div class="code__line"></div>
+
+	<router-link to="/dev-server" class="computer__screen-cta">Next</router-link>
+
+</div>

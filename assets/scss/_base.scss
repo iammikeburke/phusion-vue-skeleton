@@ -1,0 +1,25 @@
+
+body {
+  background-color: #668ab7;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.row {
+  position: absolute;
+  height: 730px;
+  width: 1000px;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (max-width: 1000px) {
+  }
+}

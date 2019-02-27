@@ -1,0 +1,75 @@
+
+/**
+ * Clock
+ */
+
+.clock {
+  // Vars
+  $this: '.clock';
+
+  // Base styling
+  position: absolute;
+  background-color: #d2d2d2;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  bottom: 510px;
+  left: 380px;
+  border: 5px solid #2b2b2b;
+  box-shadow: 0 0 1px 1px #333;
+
+  /**
+   * Elements
+   */
+  &__middle {
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+    background-color: #2b2b2b;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__minute-hand {
+    height: 60px;
+    width: 4px;
+    background: #2b2b2b;
+    position: absolute;
+    top: 16px;
+    border-radius: 3px;
+    left: calc(50% - 4px);
+    transform: translateX(-50%) rotate(-249deg);
+    transform-origin: 100% 100%;
+  }
+
+  &__hour-hand {
+    height: 30px;
+    width: 4px;
+    background: #2b2b2b;
+    position: absolute;
+    top: 47px;
+    border-radius: 3px;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    transform-origin: 100% 100%;
+  }
+
+  &__second-hand {
+    height: 70px;
+    width: 1px;
+    background-color: #df6362;
+    position: absolute;
+    top: 19px;
+    border-radius: 3px;
+    left: 50%;
+    transform: translateX(-50%) rotate(227deg);
+    transform-origin: 100% 80%;
+    z-index: 2;
+  }
+
+  /**
+   * Modifiers
+   */
+}

@@ -1,0 +1,64 @@
+
+/**
+ * Book
+ */
+.book {
+
+  // Vars
+  $this: '.book';
+
+  // Base styling
+  position: absolute;
+  bottom: 100%;
+  width: 20px;
+  height: 80px;
+  border-radius: 1px;
+  box-shadow: 1px 2px 1px 1px #4c4c4c;
+
+  /**
+   * Elements
+   */
+
+
+
+  /**
+   * Modifiers
+   */
+
+  &--small {
+    height: 70px;
+  }
+
+  &--medium {
+    height: 80px;
+  }
+
+  &--large {
+    height: 90px;
+  }
+
+  &--red {
+    background-color: #dd6464;
+  }
+
+  &--yellow {
+    background-color: #cddf5d;
+  }
+
+  &--grey {
+    background-color: #c3c0bd;
+  }
+
+  &--green {
+    background-color: #83c194;
+  }
+
+  &--orange {
+    background-color: #c9a37c;
+  }
+
+  &--blue {
+    background-color: #5abfde;
+  }
+
+}

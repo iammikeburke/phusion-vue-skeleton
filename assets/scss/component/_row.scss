@@ -1,0 +1,40 @@
+
+/**
+ * Row
+ */
+.row {
+
+  // Vars
+  $this: '.row';
+
+  // Base styling
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  /**
+   * Elements
+   */
+
+
+  /**
+   * Modifiers
+   */
+
+  &--red {
+    background-color: red;
+  }
+
+  &--yellow {
+    background-color: yellow;
+  }
+
+  &--grey {
+    background-color: grey;
+  }
+
+  &--brown {
+    background-color: brown;
+  }
+
+}

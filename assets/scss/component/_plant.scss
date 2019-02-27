@@ -1,0 +1,254 @@
+
+/**
+ * Plant
+ */
+
+.plant {
+
+  // Vars
+  $this: '.plant';
+
+  // Base styling
+  position: absolute;
+  bottom: 100%;
+  right: 10%;
+  height: 300px;
+  width: 70px;
+
+
+  /**
+   * Elements
+   */
+
+  &__pot {
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      box-shadow: 0px 0px 5px 1px #333;
+      height: 70px;
+    }
+
+    &:before {
+      left: -11px;
+      width: 30px;
+      background: #a36648;
+      height: 70px;
+      bottom: 2px;
+      transform: rotateZ(-10deg);
+    }
+
+    &:after {
+      right: -11px;
+      width: 30px;
+      background: #a36648;
+      bottom: 2px;
+      transform: rotateZ(10deg);
+    }
+  }
+
+  &__pot-body {
+    width: 50px;
+    height: 70px;
+    background: #a36648;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__pot-top {
+    height: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96px;
+    position: absolute;
+    bottom: 70px;
+    background-color: #a36648;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 1px #333;
+    z-index: 4;
+    background: linear-gradient(0deg, #a36648 0%, #a36648 20%, #86492b 100%);
+  }
+
+  &__cactus {
+    width: 45px;
+    bottom: 45px;
+    position: absolute;
+    height: 120px;
+    border-radius: 50%;
+    background: #536b47;
+    box-shadow: 0px 0px 5px 1px #333;
+    background: linear-gradient(0deg, #333 0%, #536b47 70%, #89af75 100%);
+
+    &:nth-of-type(1) {
+      transform: rotate(-16deg);
+      left: -5px;
+      z-index: 2;
+    }
+
+    &:nth-of-type(2) {
+      bottom: 80px;
+      left: 18px;
+      z-index: 1;
+    }
+
+    &:nth-of-type(3) {
+      transform: rotate(16deg);
+      right: -5px;
+      z-index: 3;
+    }
+  }
+
+  // Stem
+  &__stem {
+    position: absolute;
+    height: 325px;
+    width: 18px;
+    border-right: 6px solid #5b3b3b;
+    border-radius: 50%;
+    left: 45%;
+    transform: translateX(-50%);
+    bottom: 80px;
+
+    // Sub-stem
+    #{$this}__stem {
+      height: 90px;
+      transform: rotate(-40deg);
+      position: relative;
+      left: -24px;
+      bottom: -10px;
+
+      //
+      &:nth-of-type(2n) {
+        left: 31px;
+        transform: rotateZ(210deg);
+
+        #{$this}__leaf {
+          &:before {
+            transform: rotate(224deg);
+            left: 8px;
+          }
+        }
+
+        #{$this}__leaf {
+          &:nth-of-type(5) {
+            transform: rotateZ(446deg);
+            left: 24px;
+            bottom: 60px;
+          }
+
+          &:nth-of-type(6) {
+            transform: rotateZ(445deg);
+            left: 23px;
+            bottom: 64px;
+          }
+
+          &:nth-of-type(7) {
+            transform: rotateZ(480deg);
+            left: 13px;
+            bottom: 70px;
+          }
+        }
+      }
+
+      &:nth-of-type(2) { bottom: 80px; }
+
+      &:nth-of-type(3) { bottom: 120px; }
+
+      &:nth-of-type(4) { bottom: 158px; }
+
+      &:nth-of-type(5) { bottom: 220px; }
+
+      &:nth-of-type(6) { bottom: 252px; }
+
+      &:nth-of-type(7) { bottom: 320px; }
+
+      #{$this}__leaf {
+
+        &:nth-of-type(1) {
+          background-color: green;
+          transform: rotateZ(240deg);
+        }
+
+        &:nth-of-type(2) {
+          background-color: blue;
+          transform: rotateZ(245deg);
+          bottom: 15px;
+          left: -14px;
+        }
+
+        &:nth-of-type(3) {
+          transform: rotateZ(230deg);
+          left: -12px;
+          bottom: 16px;
+        }
+
+        &:nth-of-type(4) {
+          transform: rotateZ(204deg);
+          left: -12px;
+          bottom: 17px;
+        }
+
+        &:nth-of-type(5) {
+          transform: rotateZ(340deg);
+          left: 19px;
+          bottom: 112px;
+        }
+
+        &:nth-of-type(6) {
+          transform: rotateZ(349deg);
+          left: 24px;
+          bottom: 118px;
+        }
+
+        &:nth-of-type(7) {
+          transform: rotateZ(349deg);
+          left: 24px;
+          bottom: 118px;
+        }
+
+        &:nth-of-type(8) {
+          transform: rotateZ(355deg);
+          left: 23px;
+          bottom: 125px;
+        }
+
+      }
+    }
+  }
+
+  &__leaf {
+    border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+    width: 25px;
+    height: 25px;
+    left: -15px;
+    bottom: 10px;
+    position: relative;
+    transform: rotateZ(200deg);
+    background: rgb(83,107,71);
+    background: linear-gradient(135deg, #89af75 0%, #89af75 50%, #536b47 50%, #536b47 55%, #536b47 100%);
+
+    &:before {
+      height: 35px;
+      width: 4px;
+      border-right: 2px solid #5b3b3b;
+      border-radius: 50%;
+      content: '';
+      top: -2px;
+      position: absolute;
+      transform: rotate(50deg);
+      left: 4px;
+    }
+  }
+
+  /**
+   * Modifiers
+   */
+}

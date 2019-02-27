@@ -1,0 +1,105 @@
+
+/**
+ * Computer
+ */
+.computer {
+
+  // Base vars
+  $this: '.computer';
+  $total-height: 355px;
+  $total-width: 440px;
+  // __frame vars
+  $frame-gradientStart: #b0b0b0;
+  $frame-gradientMiddle: #cccccc;
+  $frame-gradientEnd: #b0b0b0;
+  // __stand vars
+  $stand-gradientStart: #4e4e4e;
+  $stand-gradientMiddle: #8c8d91;
+  $stand-gradientEnd: #c2c2c3;
+  // __base vars
+  $base-gradientStart: #4b4b4b;
+  $base-gradientMiddle: #8c8d91;
+  $base-gradientEnd: #d1d1d1;
+
+  // __base-bottom vars
+  $base-bottom-gradientStart: #696a6d;
+  $base-bottom-gradientMiddle: #7b7c81;
+  $base-bottom-gradientEnd: transparent;
+
+  // Base styling
+  // height: $total-height;
+  width: $total-width;
+  position: absolute;
+  bottom: 100%;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /**
+   * Elements
+   */
+
+  // Monitor (frame)
+  &__monitor {
+    position: relative;
+    height: $total-height * 0.70;
+    border-radius: 10px;
+    padding: 12px;
+    background: $frame-gradientStart;
+    background: linear-gradient(45deg, $frame-gradientStart 0%, $frame-gradientMiddle 50%, $frame-gradientEnd 100%);
+    box-shadow: 0px 0px 5px 1px #333;
+  }
+
+  // Screen (inside frame)
+  &__screen {
+    height: 100%;
+    background-color: #2b2b2b;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__screen-cta {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #e9e9e9;
+  }
+
+  // Stand
+  &__stand {
+    width: 50px;
+    height: 70px;
+    margin: 0 auto;
+    background: rgb(104,105,108);
+    background: linear-gradient(180deg, $stand-gradientStart 0%, $stand-gradientMiddle 40%, $stand-gradientEnd 100%);
+    box-shadow: 0px 0px 1px 1px #333;
+  }
+
+  // Base
+  &__base {
+    position: relative;
+    width: 140px;
+    height: 20px;
+    margin: 0 auto;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    background: rgb(104,105,108);
+    background: linear-gradient(180deg,       $base-gradientStart 0%, $base-gradientMiddle 30%, $base-gradientEnd 100%);
+    box-shadow: 0px 0px 1px 1px #333;
+  }
+
+  &__base-bottom {
+    position: absolute;
+    height: 8px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // border-bottom: 1px solid #2f2e33;
+    background-color: #111;
+    background: linear-gradient(0deg, $base-bottom-gradientStart 0%, $base-bottom-gradientMiddle 50%, $base-bottom-gradientEnd 100%);
+  }
+
+  /**
+   * Modifiers
+   */
+}

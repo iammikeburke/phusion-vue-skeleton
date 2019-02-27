@@ -1,0 +1,32 @@
+
+/**
+ * Desk
+ */
+.desk {
+
+  // Vars
+  $this: '.desk';
+
+  // Base styling
+  position: absolute;
+  background-color: #6d4c49;
+  border-radius: 2px;
+  height: 30px;
+  width: 80%;
+  min-width: 1000px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  background: linear-gradient(0deg, #735a58 0%, #6c4c4a 20%, #3b302f 100%);
+  box-shadow: 0px 2px 5px 1px #333;
+
+  /**
+   * Elements
+   */
+
+
+  /**
+   * Modifiers
+   */
+
+}

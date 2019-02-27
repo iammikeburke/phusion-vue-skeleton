@@ -1,0 +1,39 @@
+phusion:
+  routes:
+    - path: "/"
+      component: ExampleAppComponent
+      children:
+
+          # Welcome
+        - path: "/"
+          redirect: "/welcome"
+        - path: "welcome"
+          component: WelcomePageComponent
+
+          # VueJS + Phusion
+        - path: "phusion-vue"
+          component: PhusionVuePageComponent
+
+          # Components
+        - path: "components"
+          component: ComponentsPageComponent
+
+          # Routing
+        - path: "routing"
+          component: RoutingPageComponent
+
+          # Gulpfile
+        - path: "gulpfile"
+          component: GulpfilePageComponent
+
+          # Dev Server
+        - path: "dev-server"
+          component: DevServerPageComponent
+
+          # Happy Coding!
+        - path: "happy-coding"
+          component: HappyCodingPageComponent
+
+
+
+

@@ -1,0 +1,77 @@
+
+/**
+ * Code
+ */
+
+.code {
+  // Vars
+  $this: '.code';
+
+  // Base styling
+  counter-reset: number;
+
+  /**
+   * Elements
+   */
+  &__line {
+    height: 20px;
+    font-family: monospace;
+    color: #a9b7c6;
+    padding-left: 40px;
+    position: relative;
+    counter-increment: number;
+    line-height: 20px;
+    font-size: 13.5px;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      content: counter(number);
+      height: 20px;
+      width: 20px;
+      background-color: #313335;
+      display: inline-block;
+      text-align: right;
+      padding-right: 5px;
+    }
+  }
+
+  &__space {
+    width: 20px;
+    height: 25px;
+  }
+
+  &__keyword {
+    color: #cc7832;
+  }
+
+  &__semi-colon {
+    color: #cc7832;
+  }
+
+  &__comment {
+    color: #808080;
+  }
+
+  &__function {
+    color: #ffc66d;
+  }
+
+  &__property {
+    color: #9876aa;
+  }
+
+  &__string {
+    color: #6a8759;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: lowercase;
+  }
+
+  /**
+   * Modifiers
+   */
+}

@@ -1,0 +1,44 @@
+
+/**
+ * Window
+ */
+.window {
+
+  // Vars
+  $this: '.window';
+
+  /**
+   * Elements
+   */
+  &__header {
+    height: 18px;
+    background-color: #3c3f41;
+    padding: 0 7px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__dot {
+    border-radius: 100%;
+    background-color: #fc605c;
+    height: 9px;
+    width: 9px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 5px;
+
+    &:nth-child(2) {
+      background-color: #fdbe41;
+    }
+
+    &:nth-child(3) {
+      background-color: #34c74a;
+    }
+  }
+
+  &__content { }
+
+  /**
+   * Modifiers
+   */
+}
