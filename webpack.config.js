@@ -41,7 +41,8 @@ module.exports = {
       {
         test:    /\.ts/,
         exclude: /node_modules\/(?!phusion|vue).*/,
-        loaders: ['ts-loader']
+        loaders: 'ts-loader',
+        options: { allowTsInNodeModules: true }
       }
     ]
   }
