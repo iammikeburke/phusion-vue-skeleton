@@ -16,7 +16,8 @@ module.exports = {
   watch: watch,
   mode: 'development',
   watchOptions: {
-    aggregateTimeout: 300
+    aggregateTimeout: 300,
+    ignored: /node_modules/
   },
   entry:        {
     app: extEntryFilePath
