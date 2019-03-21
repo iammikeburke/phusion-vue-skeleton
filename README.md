@@ -1,8 +1,8 @@
 # phusion-vue-skeleton
 
-This repository is a skeleton project for building SPAs using [`phusion-vue`](https://github.com/iammikeburke/phusion-vue) and [`phusion`](https://github.com/iammikeburke/phusion). It provides a gulpfile (Gulp 4) with tasks for scss compilation, concatenating and uglifying JavaScript, compressing images, and running webpack builds (Webpack 4).
+This repository is a skeleton project for building SPAs using [`phusion-vue`](https://github.com/ieatstickers/phusion-vue) and [`phusion`](https://github.com/ieatstickers/phusion). It provides a gulpfile (Gulp 4) with tasks for scss compilation, concatenating and uglifying JavaScript, compressing images, and running webpack builds (Webpack 4).
 
-It also makes use of the Phusion tasks in [`phusion-vue`](https://github.com/iammikeburke/phusion-vue) and [`phusion`](https://github.com/iammikeburke/phusion)  e.g. merging config files, dev server, config driven routes etc. These tasks have been included in the Gulp setup.
+It also makes use of the Phusion tasks in [`phusion-vue`](https://github.com/ieatstickers/phusion-vue) and [`phusion`](https://github.com/ieatstickers/phusion)  e.g. merging config files, dev server, config driven routes etc. These tasks have been included in the Gulp setup.
 
 
 ### Getting Started
@@ -21,7 +21,7 @@ gulp
 
 ### Gulp
 
-When running gulp, there is an optional environment variable we can pass (`ENV`). Available options are `dev` and `prod`. When running for `dev`, sourcemaps will be included for scss, JavaScript and TypeScript files. Also, the Phusion [`ConfigTask`](https://github.com/iammikeburke/phusion/blob/master/docs/build/task/ConfigTask.md) will merge environment-specific config files depending on the environment set (see [`phusion`](https://github.com/iammikeburke/phusion/blob/master/docs/build/task/ConfigTask.md) docs for more info). If `ENV` is not set, it will default to `dev`.
+When running gulp, there is an optional environment variable we can pass (`ENV`). Available options are `dev` and `prod`. When running for `dev`, sourcemaps will be included for scss, JavaScript and TypeScript files. Also, the Phusion [`ConfigTask`](https://github.com/ieatstickers/phusion/blob/master/docs/build/task/ConfigTask.md) will merge environment-specific config files depending on the environment set (see [`phusion`](https://github.com/ieatstickers/phusion/blob/master/docs/build/task/ConfigTask.md) docs for more info). If `ENV` is not set, it will default to `dev`.
 
 The default gulp task runs all build tasks, followed by all watch tasks, then spins up a development server and opens the page in the browser.
 
